@@ -48,6 +48,10 @@ a{
     opacity:1;
 }
 
+.items li:hover .delete-button{
+    opacity:1;
+}
+
 input:focus {
     outline: none;
 }
@@ -61,6 +65,17 @@ input:focus {
     border: 0;
     opacity:0.4;
 }
+
+.delete-button{
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #d9dfe1;
+    color: #363639;
+    padding: 3px 6px;
+    border: 0;
+    opacity:0.4;
+}
+
 
 .submit{
     background-color: #fff;

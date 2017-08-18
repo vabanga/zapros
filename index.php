@@ -45,13 +45,14 @@ $items = $itemsQuery->rowCount() ? $itemsQuery : [];
 						<?php echo $item['name'];?>
 					</span>
 					<?php if(!$item['done']): ?>
-						<a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">Mark is done</a>
+						<a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">Выполнено</a>
 					<?php endif; ?>
+					<a href="del.php?as=delete&item=<?php echo $item['id']; ?>" class="delete-button">Удалить</a>
 				</li>
 			<?php endforeach; ?>
 		</ul>
 		<?php else: ?>
-			<p>Вы еще не добавили какой-либо предмет</p>
+			<p>Вы еще не добавили какое-либо задание!</p>
 		<?php endif; ?>
 
 		<form class="item-add" action="add.php" method="POST">
